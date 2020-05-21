@@ -17,7 +17,7 @@ behaviors:
         strength: 1.0
     sequence_length: 64
     steps_per_update: 10
-    summary_freq: 20000
+    summary_freq: 10
     tau: 0.005
     time_horizon: 64
     trainer: sac

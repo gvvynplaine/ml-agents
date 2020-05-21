@@ -23,7 +23,7 @@ behaviors:
         gamma: 0.99
         strength: 0.1
     sequence_length: 32
-    summary_freq: 10000
+    summary_freq: 10
     time_horizon: 64
     trainer: ppo
     use_recurrent: false

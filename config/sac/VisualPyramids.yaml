@@ -23,7 +23,7 @@ behaviors:
         use_actions: true
     sequence_length: 64
     steps_per_update: 10
-    summary_freq: 10000
+    summary_freq: 10
     tau: 0.01
     time_horizon: 128
     trainer: sac

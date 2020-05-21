@@ -36,7 +36,7 @@ behaviors:
       team_change: 200000
       window: 10
     sequence_length: 64
-    summary_freq: 10000
+    summary_freq: 10
     time_horizon: 1000
     trainer: ppo
     use_recurrent: false
