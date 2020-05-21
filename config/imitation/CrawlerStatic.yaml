@@ -1,29 +1,29 @@
 behaviors:
   CrawlerStatic:
-    trainer: ppo
-    batch_size: 2024
+    batch_size: 10
+    behavioral_cloning:
+      demo_path: Project/Assets/ML-Agents/Examples/Crawler/Demos/ExpertCrawlerSta.demo
+      steps: 50000
+      strength: 0.5
     beta: 0.005
-    buffer_size: 20240
+    buffer_size: 10
     epsilon: 0.2
     hidden_units: 512
     lambd: 0.95
     learning_rate: 0.0003
-    max_steps: 1e7
+    max_steps: 100
     memory_size: 256
     normalize: true
     num_epoch: 3
     num_layers: 3
-    time_horizon: 1000
-    sequence_length: 64
-    summary_freq: 30000
-    use_recurrent: false
     reward_signals:
       gail:
-        strength: 1.0
-        gamma: 0.99
-        encoding_size: 128
         demo_path: Project/Assets/ML-Agents/Examples/Crawler/Demos/ExpertCrawlerSta.demo
-    behavioral_cloning:
-      demo_path: Project/Assets/ML-Agents/Examples/Crawler/Demos/ExpertCrawlerSta.demo
-      strength: 0.5
-      steps: 50000
+        encoding_size: 128
+        gamma: 0.99
+        strength: 1.0
+    sequence_length: 64
+    summary_freq: 30000
+    time_horizon: 1000
+    trainer: ppo
+    use_recurrent: false
